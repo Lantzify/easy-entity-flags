@@ -12,14 +12,14 @@
 		<PropertyGroup>
 				<PackageId>EasyEntityFlags</PackageId>
 				<Version>1.0.0</Version>
-				<Title>EasyEntityFlags</Title>
+				<Title>Easy Entity Flags</Title>
 				<Authors>Lantzify</Authors>
 				<Owners>Lantzify</Owners>
 				<PackageIconUrl></PackageIconUrl>
 				<PackageLicenseExpression>MIT</PackageLicenseExpression>
-				<PackageProjectUrl>https://github.com/Lantzify/EasyEntityFlags</PackageProjectUrl>
+				<PackageProjectUrl>https://github.com/Lantzify/easy-entity-flags </PackageProjectUrl>
 				<PackageTags>Umbraco umbraco-marketplace</PackageTags>
-				<RepositoryUrl>https://github.com/Lantzify/EasyEntityFlags</RepositoryUrl>
+				<RepositoryUrl>https://github.com/Lantzify/easy-entity-flags </RepositoryUrl>
 				<Description>Easy Entity Flags is an Umbraco package made that lets you display configurable icon flags on content tree items, collection items, and document items using only appsettings.json</Description>
 				<Summary>Easy Entity Flags is an Umbraco package made that lets you display configurable icon flags on content tree items, collection items, and document items using only appsettings.json</Summary>
 				<EmbedUntrackedSources>true</EmbedUntrackedSources>
