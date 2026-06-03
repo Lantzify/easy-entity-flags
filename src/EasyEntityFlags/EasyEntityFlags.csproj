@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+		<PropertyGroup>
+				<TargetFrameworks>net10.0</TargetFrameworks>
+				<StaticWebAssetBasePath>App_Plugins/EasyEntityFlags</StaticWebAssetBasePath>
+		</PropertyGroup>
+
+		<ItemGroup>
+				<PackageReference Include="Umbraco.Cms.Api.Management" Version="17.4.0" />
+		</ItemGroup>
+
+		<PropertyGroup>
+				<PackageId>EasyEntityFlags</PackageId>
+				<Version>1.0.0</Version>
+				<Title>EasyEntityFlags</Title>
+				<Authors>Lantzify</Authors>
+				<Owners>Lantzify</Owners>
+				<PackageIconUrl></PackageIconUrl>
+				<PackageLicenseExpression>MIT</PackageLicenseExpression>
+				<PackageProjectUrl>https://github.com/Lantzify/EasyEntityFlags</PackageProjectUrl>
+				<PackageTags>Umbraco umbraco-marketplace</PackageTags>
+				<RepositoryUrl>https://github.com/Lantzify/EasyEntityFlags</RepositoryUrl>
+				<Description>Easy Entity Flags is an Umbraco package made that lets you display configurable icon flags on content tree items, collection items, and document items using only appsettings.json</Description>
+				<Summary>Easy Entity Flags is an Umbraco package made that lets you display configurable icon flags on content tree items, collection items, and document items using only appsettings.json</Summary>
+				<EmbedUntrackedSources>true</EmbedUntrackedSources>
+				<IncludeSymbols>true</IncludeSymbols>
+				<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+				<ContentTargetFolders>content</ContentTargetFolders>
+
+				<PackageOutputPath>./build/Release</PackageOutputPath>
+		</PropertyGroup>
+		
+		<ItemGroup>
+				<None Include="..\..\umbraco-marketplace-readme.md" Pack="true" PackagePath="\" />
+		</ItemGroup>
+
+		<Target Name="GenerateSchema" BeforeTargets="BeforeBuild" Condition="'$(Configuration)' == 'Release'">
+				<Message Text="Generating EasyEntityFlags schema file..." Importance="high" />
+				<Exec Command="dotnet run --project &quot;$(MSBuildThisFileDirectory)\..\EasyEntityFlags.SchemaGenerator\EasyEntityFlags.SchemaGenerator.csproj&quot; -- -o &quot;$(MSBuildThisFileDirectory)appsettings-schema.easy-entity-flags.json&quot;" />
+		</Target>
+		<ItemGroup>
+				<None Include="$(MSBuildThisFileDirectory)appsettings-schema.easy-entity-flags.json">
+						<Pack>True</Pack>
+						<PackagePath>content</PackagePath>
+				</None>
+		</ItemGroup>
+
+		<ItemGroup>
+				<None Include="buildTransitive\**\*.*">
+						<Pack>True</Pack>
+						<PackagePath>buildTransitive</PackagePath>
+				</None>
+		</ItemGroup>
+
+</Project>

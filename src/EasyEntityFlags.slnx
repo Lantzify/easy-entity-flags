@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="EasyEntityFlags.SchemaGenerator/EasyEntityFlags.SchemaGenerator.csproj" Id="22791026-43cd-4709-8e12-4d21ff003358" />
+  <Project Path="EasyEntityFlags.Web/EasyEntityFlags.Web.csproj" />
+  <Project Path="EasyEntityFlags/EasyEntityFlags.csproj" Id="3dc53f70-a038-442d-ad7e-5261948cd453" />
+</Solution>

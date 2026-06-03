@@ -1,0 +1,4 @@
+﻿<Project>
+		<ItemGroup>
+				<UmbracoJsonSchemaFiles Include="$(MSBuildThisFileDirectory)..\content\appsettings-schema.easy-entity-flags.json" Weight="-80" />		</ItemGroup>
+</Project>

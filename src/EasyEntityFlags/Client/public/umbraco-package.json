@@ -1,0 +1,13 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "Easy Entity Flags",
+  "alias": "easyEntityFlags",
+  "extensions": [
+    {
+      "type": "backofficeEntryPoint",
+      "name": "EasyEntityFlags EntryPoint",
+      "alias": "easyEntityFlags.entryPoint",
+      "js": "/App_Plugins/EasyEntityFlags/easyEntityFlags.js"
+    }
+  ]
+}

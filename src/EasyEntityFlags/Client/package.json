@@ -1,0 +1,21 @@
+{
+  "name": "easyentityflags",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "watch": "vite build --watch",
+    "generate": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 openapi-ts"
+  },
+  "dependencies": {
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.97.3",
+    "@umbraco-cms/backoffice": "^17.4.2",
+    "cross-env": "^10.1.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  }
+}

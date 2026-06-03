@@ -1,0 +1,13 @@
+{
+  "name": "easy-entity-flags",
+  "private": true,
+  "version": "17.0.0",
+  "scripts": {
+    "install-client": "cd ./EasyEntityFlags/Client/ && npm install",
+    "build-watch": "cd ./EasyEntityFlags/Client/ && npm run watch",
+    "openapi-typescript-codegen": "cd ./EasyEntityFlags/Client/ && npm run generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

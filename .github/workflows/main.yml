@@ -1,0 +1,32 @@
+name: Release
+on:
+  release:
+    types:
+      - published
+permissions:
+  contents: read
+jobs:
+  release_name:
+    name: Publish NuGet Package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: 'src/EasyEntityFlags/Client/package-lock.json'
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: src/EasyEntityFlags/Client
+      
+      - name: Build frontend assets
+        run: npm run build
+        working-directory: src/EasyEntityFlags/Client
+      - name: Build project
+        run: dotnet build --configuration Release src/EasyEntityFlags
+      - name: Package files
+        run: dotnet pack --configuration Release  src/EasyEntityFlags /p:Version=${{github.ref_name}}
+      - name: Publish the package
+        run: dotnet nuget push src/EasyEntityFlags/build/Release/EasyEntityFlags.${{github.ref_name}}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.PRIVATE_NUGET_KEY }}
