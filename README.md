@@ -2,6 +2,10 @@
 
 Easy Entity Flags is an Umbraco package that lets you display configurable icon flags on content tree items, collection items, and document items using only `appsettings.json`.
 
+![version](https://img.shields.io/nuget/v/EasyEntityFlags?label=version)
+[![Nuget](https://img.shields.io/nuget/dt/EasyEntityFlags?color=2346c018&logo=Nuget)](https://www.nuget.org/packages/EasyEntityFlags)
+[![Umbraco](https://img.shields.io/badge/marketplace-umbraco-283a97)](https://marketplace.umbraco.com/package/easyentityflags)
+
 ## Configuration
 
 Add an `EasyEntityFlags` section to your `appsettings.json`:
