@@ -23,23 +23,19 @@ Add an `EasyEntityFlags` section to your `appsettings.json`:
 
 ### Flag properties
 
-| Property | Required | Description |
-|---|---|---|
-| `PropertyAlias` | Yes | The alias of the content property to evaluate |
-| `Icon` | Yes | Umbraco icon code (e.g. `icon-badge-remove`) |
-| `Label` | Yes | Tooltip label shown in the backoffice. Supports Umbraco localization keys prefixed with `#` (e.g. `#general_name`) — [see all keys](https://github.com/umbraco/Umbraco-CMS/blob/main/src/Umbraco.Web.UI.Client/src/assets/lang/en.ts) |
-| `Condition` | No | When to show the flag — see below (default: `IsTrue`) |
-| `IconColorAlias` | No | Color alias (e.g. `red`, `pink`, `green`) |
-| `ForEntityTypes` | No | Entity types to apply the flag to (default: `["document"]`) |
+- **`PropertyAlias`** *(required)* — The alias of the content property to evaluate
+- **`Icon`** *(required)* — Umbraco icon code (e.g. `icon-badge-remove`)
+- **`Label`** *(required)* — Tooltip label shown in the backoffice. Supports Umbraco localization keys prefixed with `#` (e.g. `#general_name`) — [see all keys](https://github.com/umbraco/Umbraco-CMS/blob/main/src/Umbraco.Web.UI.Client/src/assets/lang/en.ts)
+- **`Condition`** *(optional)* — When to show the flag — see below (default: `IsTrue`)
+- **`IconColorAlias`** *(optional)* — Color alias (e.g. `red`, `pink`, `green`)
+- **`ForEntityTypes`** *(optional)* — Entity types to apply the flag to (default: `["document"]`)
 
 ### Conditions
 
-| Value | Shows flag when… |
-|---|---|
-| `IsTrue` | The property is a boolean and is `true` *(default)* |
-| `IsFalse` | The property is a boolean and is `false` |
-| `HasValue` | The property has a value |
-| `HasNoValue` | The property has no value (field is empty) |
+- **`IsTrue`** — The property is a boolean and is `true` *(default)*
+- **`IsFalse`** — The property is a boolean and is `false`
+- **`HasValue`** — The property has a value
+- **`HasNoValue`** — The property has no value (field is empty)
 
 #### Examples
 
