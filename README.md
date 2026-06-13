@@ -2,6 +2,10 @@
 
 Easy Entity Flags is an Umbraco package that lets you display configurable icon flags on content tree items, collection items, and document items using only `appsettings.json`.
 
+![version](https://img.shields.io/nuget/v/EasyEntityFlags?label=version)
+[![Nuget](https://img.shields.io/nuget/dt/EasyEntityFlags?color=2346c018&logo=Nuget)](https://www.nuget.org/packages/EasyEntityFlags)
+[![Umbraco](https://img.shields.io/badge/marketplace-umbraco-283a97)](https://marketplace.umbraco.com/package/easyentityflags)
+
 ## Configuration
 
 Add an `EasyEntityFlags` section to your `appsettings.json`:
@@ -14,7 +18,7 @@ Add an `EasyEntityFlags` section to your `appsettings.json`:
         "Label": "No Index",
         "PropertyAlias": "noIndex",
         "Icon": "icon-badge-remove",
-        "IconColorAlias": "orange"
+        "IconColorAlias": "red"
       }
     ]
   }
@@ -62,7 +66,7 @@ Flag content where `noIndex` is turned on:
   "Label": "No Index",
   "PropertyAlias": "noIndex",
   "Icon": "icon-eye-close",
-  "IconColorAlias": "orange",
+  "IconColorAlias": "red",
   "Condition": "IsTrue"
 }
 ```
@@ -74,7 +78,7 @@ Flag content where an `isIndexable` toggle is turned **off** (inverted boolean):
   "Label": "Not indexable",
   "PropertyAlias": "isIndexable",
   "Icon": "icon-eye-close",
-  "IconColorAlias": "orange",
+  "IconColorAlias": "red",
   "Condition": "IsFalse"
 }
 ```

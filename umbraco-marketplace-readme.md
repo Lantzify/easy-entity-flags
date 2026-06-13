@@ -14,7 +14,7 @@ Add an `EasyEntityFlags` section to your `appsettings.json`:
         "Label": "No Index",
         "PropertyAlias": "noIndex",
         "Icon": "icon-badge-remove",
-        "IconColorAlias": "orange"
+        "IconColorAlias": "red"
       }
     ]
   }
@@ -58,7 +58,7 @@ Flag content where `noIndex` is turned on:
   "Label": "No Index",
   "PropertyAlias": "noIndex",
   "Icon": "icon-eye-close",
-  "IconColorAlias": "orange"
+  "IconColorAlias": "red"
 }
 ```
 
@@ -69,7 +69,7 @@ Flag content where an `isIndexable` toggle is turned **off** (inverted boolean):
   "Label": "Not indexable",
   "PropertyAlias": "isIndexable",
   "Icon": "icon-eye-close",
-  "IconColorAlias": "orange",
+  "IconColorAlias": "red",
   "Condition": "IsFalse"
 }
 ```
