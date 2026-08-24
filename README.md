@@ -83,6 +83,10 @@ Flag content where an `isIndexable` toggle is turned **off** (inverted boolean):
 }
 ```
 
+## Versioning
+- 2.x.x is for Umbraco v18
+- 1.x.x is for Umbraco v17
+
 ## Screenshots
 
 ### No Index
