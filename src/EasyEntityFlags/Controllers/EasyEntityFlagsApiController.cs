@@ -13,8 +13,8 @@ namespace EasyEntityFlags.Controllers
 {
 	[ApiController]
 	[ApiVersion("1.0")]
-	[MapToApi("easyEntityFlags")]
-	[ApiExplorerSettings(GroupName = "easyEntityFlags")]
+	[MapToApi("EasyEntityFlags")]
+	[ApiExplorerSettings(GroupName = "EasyEntityFlags")]
 	[Authorize(Policy = AuthorizationPolicies.BackOfficeAccess)]
 	public class EasyEntityFlagsApiController : Controller
 	{

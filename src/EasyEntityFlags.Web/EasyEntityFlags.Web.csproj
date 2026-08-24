@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Clean" Version="7.0.6" />
-    <PackageReference Include="Umbraco.Cms" Version="17.4.2" />
-    <PackageReference Include="Umbraco.Cms.DevelopmentMode.Backoffice" Version="17.4.2" />
+    <PackageReference Include="Clean" Version="8.0.0" />
+    <PackageReference Include="Umbraco.Cms" Version="18.0.0" />
+    <PackageReference Include="Umbraco.Cms.DevelopmentMode.Backoffice" Version="18.0.0" />
   </ItemGroup>
 
   <ItemGroup>
