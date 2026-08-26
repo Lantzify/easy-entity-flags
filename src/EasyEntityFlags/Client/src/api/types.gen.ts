@@ -9,11 +9,15 @@ export type EasyEntityFlagModel = {
     icon?: string | null;
     iconColorAlias?: string | null;
     label?: string | null;
+    weight: number;
     forEntityTypes?: Array<string> | null;
+    condition: FlagCondition;
     name?: string | null;
     alias?: string | null;
     flagName?: string | null;
 };
+
+export type FlagCondition = 'HasValue' | 'HasNoValue' | 'IsTrue' | 'IsFalse';
 
 export type GetGetEntityFlagsData = {
     body?: never;

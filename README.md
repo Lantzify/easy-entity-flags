@@ -32,6 +32,7 @@ Add an `EasyEntityFlags` section to your `appsettings.json`:
 | `PropertyAlias` | Yes | The alias of the content property to evaluate |
 | `Icon` | Yes | Umbraco icon code (e.g. `icon-badge-remove`) |
 | `Label` | Yes | Tooltip label shown in the backoffice. Supports Umbraco localization keys prefixed with `#` (e.g. `#general_name`) — [see all keys](https://github.com/umbraco/Umbraco-CMS/blob/main/src/Umbraco.Web.UI.Client/src/assets/lang/en.ts) |
+| `Weight` | No | Used to sort when multiple flags on same node  |
 | `Condition` | No | When to show the flag — see below (default: `IsTrue`) |
 | `IconColorAlias` | No | Color alias (e.g. `red`, `orange`, `green`) |
 | `ForEntityTypes` | No | Entity types to apply the flag to (default: `["document"]`) |
