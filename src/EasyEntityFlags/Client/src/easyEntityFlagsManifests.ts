@@ -32,6 +32,7 @@ export class EasyEntityFlagsManifests implements UmbApi {
                 "kind": "icon",
                 "name": x.name ?? "",
                 "alias": x.alias ?? "",
+                "weight": x.weight,
                 "forEntityTypes": x.forEntityTypes ?? [],
                 "forEntityFlags": [x.flagName ?? ""],
                 "meta": {

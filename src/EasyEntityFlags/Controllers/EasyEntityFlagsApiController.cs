@@ -41,7 +41,8 @@ namespace EasyEntityFlags.Controllers
 						IconColorAlias = entityFlag.IconColorAlias,
 						Label = entityFlag.Label,
 						ForEntityTypes = entityFlag.ForEntityTypes,
-						Name = string.Format("EasyEntityFlag {0}", entityFlag.PropertyAlias),
+						Weight = entityFlag.Weight,
+						Name = string.Format("EasyEntityFlag {0} {1}", entityFlag.PropertyAlias, entityFlag.Label),
 						FlagName = entityFlag.GetFlagName()
 					};
 

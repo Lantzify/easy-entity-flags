@@ -6,7 +6,7 @@ namespace EasyEntityFlags.Extensions
 	{
 		public static string GetFlagName(this EasyEntityFlag flag)
 		{
-			return string.Format("EasyEntityFlag_{0}", flag.PropertyAlias);
+			return string.Format("EasyEntityFlag_{0}_{1}", flag.PropertyAlias, flag.Label);
 		}
 	}
 }
