@@ -13,12 +13,6 @@
     "Title": "Easy Entity Flags",
     "Description": "Easy Entity Flags is an Umbraco package made that lets you display configurable icon flags on content tree items, collection items, and document items using only appsettings.json.",
     "IssueTrackerUrl": "https://github.com/Lantzify/easy-entity-flags/issues",
-    "PackagesByAuthor": [
-        "AutoDictionaries",
-        "uSupport",
-        "AutoBlockList",
-        "UmbracoNaviHideIcon"
-    ],
     "Screenshots": [
         {
             "ImageUrl": "https://raw.githubusercontent.com/Lantzify/easy-entity-flags/refs/heads/master/assets/no_index.png",
